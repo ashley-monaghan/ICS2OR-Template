@@ -25,6 +25,12 @@ body {
   background-color: #a082f2;
 }
 
+#right-image {
+  position: absolute;
+  right: 0%;
+
+}
+
 p {
   color: #ac6ce4;
   font-family: Helvetica, Arial, sans-serif;
