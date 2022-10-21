@@ -1,63 +1,95 @@
 <!DOCTYPE html>
 <!--- ICS2O-Template --->
 <html lang="en">
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My first PWA" />
-    <meta name="keywords" content="mths, ics2o" />
-    <meta name="author" content="Ashley Monaghan" />
-    <meta name="theme-color" content="#FFFFFF" />
-    <title>GitHub page as PWA template</title>
-    <link rel="canonical" href="https://mr-coxall.github.io/ICS2O-PWA-Test/" />
-    <link rel="manifest" href="/ICS2O-PWA-Test/manifest.webmanifest" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!--- None blocking for Lighthouse report --->
-    <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      media="none"
-      onload="if(media!='all')media='all'"
-    />
-    <noscript>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="My first PWA" />
+      <meta name="keywords" content="mths, ics2o" />
+      <meta name="author" content="Ashley Monaghan" />
+      <meta name="theme-color" content="#FFFFFF" />
+      <title>GitHub page as PWA template</title>
+      <link
+        rel="canonical"
+        href="https://mr-coxall.github.io/ICS2O-PWA-Test/"
+      />
+      <link rel="manifest" href="/ICS2O-PWA-Test/manifest.webmanifest" />
+      <link rel="stylesheet" href="./css/styles.css" />
+      <!--- None blocking for Lighthouse report --->
+      <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        media="none"
+        onload="if(media!='all')media='all'"
       />
-    </noscript>
-    <link
-      rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
-      media="none"
-      onload="if(media!='all')media='all'"
-    />
-    <noscript>
+      <noscript>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+      </noscript>
       <link
         rel="stylesheet"
         href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+        media="none"
+        onload="if(media!='all')media='all'"
       />
-    </noscript>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <title>Title</title>
-  </head>
-  <body>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="./js/script.js"></script>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Title</span>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="page-content" style="padding-left: 100px">
-          <!-- Simple Textfield (Only words)-->
+      <noscript>
+        <link
+          rel="stylesheet"
+          href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+        />
+      </noscript>
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="favicon-16x16.png"
+      />
+      <title>Title</title>
+    </head>
+    <body>
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      <script src="./js/script.js"></script>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Title</span>
+          </div>
+        </header>
+        <main class="mdl-layout__content">
+          <div class="page-content" style="padding-left: 100px">
+            <!-- Simple Textfield (Only words)-->
+            <form action="#">
+              <p>words</p>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  pattern="-?[0-9]*(\.[0-9]+)?"
+                  id="XXX"
+                />
+                <label class="mdl-textfield__label" for="XXX">words ...</label>
+                <span class="mdl-textfield__error">Input is not a number!</span>
+              </div>
+            </form>
+          </div>
+          <!-- Numeric Textfield (Only Numbers)-->
           <form action="#">
-            <p>words</p>
+            <p>More words</p>
             <div class="mdl-textfield mdl-js-textfield">
               <input
                 class="mdl-textfield__input"
@@ -66,48 +98,32 @@
                 id="XXX"
               />
               <label class="mdl-textfield__label" for="XXX"
-                >words ...</label
+                >More words ...</label
               >
               <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
           </form>
-        </div>
-        <!-- Numeric Textfield (Only Numbers)-->
-        <form action="#">
-          <p>More words</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="XXX"
-            />
-            <label class="mdl-textfield__label" for="XXX"
-              >More words ...</label
-            >
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-        </form>
-        <br />
-        <p>Blah blah blah</p>
-        <img
-          src="./images/smashing_pumpkins.jpeg"
-          alt="Smashing_pumpkins"
-          id="right-image"
-        />
-        <p>Blah blah blah</p>
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
-          onclick="myButtonClicked()"
-        >
-          Button!
-        </button>
-        <!-- basic text -->
-        <p>Blah blah blah</p>
-        <div id="hello-world"></div>
           <br />
-      </main>
-    </div>
-  </body>
+          <p>Blah blah blah</p>
+          <img
+            src="./images/smashing_pumpkins.jpeg"
+            alt="Smashing_pumpkins"
+            id="right-image"
+          />
+          <p>Blah blah blah</p>
+          <!-- Raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+            onclick="myButtonClicked()"
+          >
+            Button!
+          </button>
+          <!-- basic text -->
+          <p>Blah blah blah</p>
+          <div id="hello-world"></div>
+          <br />
+        </main>
+      </div>
+    </body>
+  </html>
 </html>
