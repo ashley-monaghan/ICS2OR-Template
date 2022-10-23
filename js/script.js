@@ -5,6 +5,23 @@
 // This file contains the JS functions for index.html
 
 "use strict"
+/**
+ * This function calculates area and perimeter of triangle.
+ */
+function calculate() {
+  // input
+  const simple = parseInt(document.getElementById("simple-textfeild").value)
+  const numeric = parseInt(document.getElementById("numeric-textfield").value)
+
+  // process
+  const math = simple + numeric
+
+  // output
+  document.getElementById("math").innerHTML = "The answer is: " + math + " cm"
+}
+
+
+"use strict"
 
 /**
  * Check servie worker.
