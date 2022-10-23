@@ -25,10 +25,9 @@ body {
   background-color: #a082f2;
 }
 
-#smashing-pumpkins {
-  position: absolute;
-  right: 0%;
-  margin: 10px;
+image {
+  float: right;
+  margin-right: 15px;
 }
 
 p {
