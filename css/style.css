@@ -22,10 +22,10 @@
 }
 
 body {
-  background-color: #a9f282;
+  background-color: rgb(186, 131, 237);
 }
 
-image {
+images {
   float: right;
   margin-right: 15px;
 }
