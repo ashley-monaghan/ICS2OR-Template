@@ -20,8 +20,7 @@ function calculate() {
   document.getElementById("math").innerHTML = "The answer is: " + math + " cm"
 }
 
-
-"use strict"
+;("use strict")
 
 /**
  * Check servie worker.
