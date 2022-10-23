@@ -53,10 +53,43 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+        <!-- Simple Textfield -->
+        <form action="#">
+          <p>Simple Textfield</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="simple-textfeild"
+            />
+            <label class="mdl-textfield__label" for="simple-textfeild"
+              >text ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <p>Numeric Textfield</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="base-of-triangle"
+            />
+            <label class="mdl-textfield__label" for="numeric-textfield"
+              >Text ...</label
+            >
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br />
         <p></p>
         <img
           src="./images/smashing_pumpkins.jpeg"
-          id="smashing_pumpkins"
+          id="smashing-pumpkins"
           alt="smashing_pumpkins"
           width="25%"
           height="auto%"
